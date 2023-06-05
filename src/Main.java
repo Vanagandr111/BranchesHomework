@@ -5,8 +5,8 @@ import java.util.logging.Logger;
 public class Main {
 
   public static void main(String[] args) {
-    int[] salesInCurrentMonth = new int[0];
-    int[] salesInLastMonth = new int[16];
+    long[] salesInCurrentMonth = new long[0];
+    long[] salesInLastMonth = new long[16];
     Random random = new Random();
     Logger logger = Logger.getLogger("Sales Manager Homework");
 
