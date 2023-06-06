@@ -6,12 +6,12 @@ public class Main {
 
   public static void main(String[] args) {
     long[] salesInCurrentMonth = new long[0];
-    long[] salesInLastMonth = new long[16];
+    long[] salesInLastMonth = new long[30];
     Random random = new Random();
     Logger logger = Logger.getLogger("Sales Manager Homework");
 
     for(int n = 0; n < salesInLastMonth.length; n++) {
-      salesInLastMonth[n] = random.nextInt(100);
+      salesInLastMonth[n] = random.nextLong(1000);
     }
     SalesManager managerCurrentMonth = new SalesManager(salesInCurrentMonth);
     SalesManager managerLastMonth = new SalesManager(salesInLastMonth);
